@@ -144,7 +144,15 @@ function App() {
                     onClick={() => handleSquareClick(rowIndex, colIndex)}
                     title={piece ? `${piece.color} ${piece.type}` : 'Empty square'}
                   >
-                    {piece ? pieceSymbols[piece.color][piece.type] : ''}
+                    <span className={`${
+                      piece 
+                        ? piece.color === 'white' 
+                          ? 'text-green-700' 
+                          : 'text-red-700'
+                        : ''
+                    }`}>
+                      {piece ? pieceSymbols[piece.color][piece.type] : ''}
+                    </span>
                   </button>
                 )
               })
