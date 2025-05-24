@@ -124,7 +124,7 @@ function App() {
                   <button
                     key={`${rowIndex}-${colIndex}`}
                     className={`
-                      w-16 h-16 flex items-center justify-center text-4xl font-bold
+                      w-20 h-20 flex items-center justify-center text-5xl font-bold
                       transition-colors border-0 focus:outline-none focus:ring-2 focus:ring-blue-400
                       ${
                         isLight 
